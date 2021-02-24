@@ -13,9 +13,9 @@ dependencies {
     implementation 'io.quarkus:quarkus-jdbc-h2'
     implementation 'io.quarkus:quarkus-hibernate-orm-panache'
     implementation 'io.quarkus:quarkus-arc'
-    implementation 'io.quarkus:quarkus-resteasy'
-    testImplementation 'io.quarkus:quarkus-junit5'
-    testImplementation 'io.rest-assured:rest-assured'
+
+    compileOnly "org.projectlombok:lombok:1.18.16"
+    annotationProcessor "org.projectlombok:lombok:1.18.16"
 }
 
 group 'org.acme'
